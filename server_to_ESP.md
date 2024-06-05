@@ -30,7 +30,7 @@ _version: 1_
 
 ### message_id
 - Each message sent between the server and the ESP device includes a unique `message_id`.
-- When the server sends a message to the ESP device, it expects the ESP device to return an "ACT" message, along with the original `message_id`. 
+- When the server sends a message to the ESP device, it expects the ESP device to return an `"success"` message, along with the original `message_id`. 
 - This response from the ESP device indicates that the server's message was correctly received and processed by the ESP device.
 - It is explained in more detail in the `delivey_messge_stracture` file.
 
