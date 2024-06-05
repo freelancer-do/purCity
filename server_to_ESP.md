@@ -4,6 +4,7 @@ _version: 1_
 ```
 {
     "gateway_id": 1,
+    "message_id":1717616744045,
     "command": "set_output",
     "device_pack_outputs": [
         {
@@ -26,6 +27,12 @@ _version: 1_
 - This is the unique integer ID that identifies the gateway device, which should match the `gateway_id` sent from the ESP to the server.
 - The MQTT topic is constructed using the `gateway_id`, in the format `PurCity/server_to_esp/1`.
 - The ESP should subscribe to this MQTT topic to listen for any commands or updates from the server.
+
+### message_id
+- Each message sent between the server and the ESP device includes a unique `message_id`.
+- When the server sends a message to the ESP device, it expects the ESP device to return an "ACT" message, along with the original `message_id`. 
+- This response from the ESP device indicates that the server's message was correctly received and processed by the ESP device.
+- It is explained in more detail in the `delivey_messge_stracture` file.
 
 ### command
 - In this case, the command is `"set_output"`, which means the server is sending new output values for the device packs.
