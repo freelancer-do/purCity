@@ -8,18 +8,18 @@ _version : 1_
     "device_pack_info": [
         {
             "device_pack_id": 1,
-            "sensor_1": "Value",
-            "sensor_2": "Value",
-            "sensor_3": "Value",
-            "sensor_4": "Value",
+            "sensor_1": 22.2,
+            "sensor_2": true,
+            "sensor_3": false,
+            "sensor_4": 18,
             "Timestamp": 1717491848
         },
         {
             "device_pack_id": 2,
-            "sensor_1": "Value",
-            "sensor_2": "Value",
-            "sensor_3": "Value",
-            "sensor_4": "Value",
+            "sensor_1": 22.8,
+            "sensor_2": true,
+            "sensor_3": false,
+            "sensor_4": 19,
             "Timestamp": 1717491848
         }
     ]
