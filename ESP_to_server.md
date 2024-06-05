@@ -38,7 +38,7 @@ _version : 1_
 ### message_id
 
 - The `message_id` is a unique identifier assigned to each message sent to the server. This unique ID helps the server track and manage the messages it receives.
-- After receiving a message, the server responds with a message containing the word "act" and an ID similar to the original `message_id`. This indicates that the original message was successfully received by the server.
+- After receiving a message, the server responds with a message containing the word `"success"` and an ID similar to the original `message_id`. This indicates that the original message was successfully received by the server.
 - The `message_id` can be a nanosecond-precision Unix timestamp, which provides a highly unique and time-based identifier for each message.
 - It is explained in more detail in the `delivey_messge_stracture` file.
 
