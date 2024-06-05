@@ -41,7 +41,7 @@ _version : 1_
 - After receiving a message, the server responds with a message containing the word "act" and an ID similar to the original `message_id`. This indicates that the original message was successfully received by the server.
 - The `message_id` can be a nanosecond-precision Unix timestamp, which provides a highly unique and time-based identifier for each message.
 - It is explained in more detail in the `delivey_messge_stracture` file.
-- 
+
 ### device_pack_info
 - This is an array that contains information about the various device packs connected to the gateway.
 - Each element in the array represents a unique device_pack_id, which is an integer that identifies the device pack.
