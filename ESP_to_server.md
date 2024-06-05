@@ -1,6 +1,6 @@
 
-# The json structure of the message sent from ESP to the server
-_version : 1_
+# The JSON  structure of the message sent from ESP to the server
+_version: 1_
 
 ```
 {
