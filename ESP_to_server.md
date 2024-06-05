@@ -1,0 +1,52 @@
+
+# The json structure of the message sent from ESP to the server
+_version : 1_
+
+```
+{
+    "gateway_id": 1,
+    "device_pack_info": [
+        {
+            "device_pack_id": 1,
+            "sensor_1": "Value",
+            "sensor_2": "Value",
+            "sensor_3": "Value",
+            "sensor_4": "Value",
+            "Timestamp": 1717491848
+        },
+        {
+            "device_pack_id": 2,
+            "sensor_1": "Value",
+            "sensor_2": "Value",
+            "sensor_3": "Value",
+            "sensor_4": "Value",
+            "Timestamp": 1717491848
+        }
+    ]
+}
+```
+
+
+
+
+### gateway_id
+- This is a unique integer ID that identifies the gateway device.
+- Each project should have a unique gateway ID, which is used to create the MQTT topic for sending data to the server. For example, if the gateway_id is 1, the MQTT topic would be PurCity/ESP_to_server/1.
+
+### device_pack_info
+- This is an array that contains information about the various device packs connected to the gateway.
+- Each element in the array represents a unique device_pack_id, which is an integer that identifies the device pack.
+- Under each device_pack_id, there is information about the sensors and their corresponding values, as well as a timestamp indicating when the data was collected.
+
+### Sensor Data
+- The sensor data is stored as key-value pairs, where the key represents the sensor ID (e.g., sensor_1, sensor_2, etc.) and the value represents the sensor reading.
+- The sensor IDs should be pre-defined and agreed upon, so that the server knows which sensor corresponds to each ID. For example, sensor_1 could be the humidity sensor, - sensor_2 could be the temperature sensor, and so on.
+- The sensor values can be of any appropriate data type (e.g., string, number, boolean) depending on the sensor type and the data format.
+
+### Timestamp
+- The timestamp field represents the time at which the sensor data was collected, in Unix timestamp format (seconds since the Unix epoch).
+- This timestamp can be used by the server to organize and analyze the data correctly.
+- 
+
+
+
