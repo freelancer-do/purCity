@@ -14,7 +14,7 @@ The delivery message structure is a JSON format that is used to report the succe
 
 - **gateway_id**: This field identifies the specific gateway or device that is sending the delivery report.
 - **message_id**: The `message_id` field contains the unique identifier of the message that was successfully received. This `message_id` must match the `message_id` of the original message.
-- **status**: The `status` field is set to the value "success" to indicate that the message was received without any issues.
+- **status**: The `status` field is set to the value `"success"` to indicate that the message was received without any issues.
 
 Both the ESP device and the server are required to send a delivery report message after receiving a message from the other party. This report confirms that the original message was successfully received and processed.
 
