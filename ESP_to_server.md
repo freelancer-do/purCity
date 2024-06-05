@@ -5,6 +5,7 @@ _version : 1_
 ```
 {
     "gateway_id": 1,
+    "message_id": 1,
     "device_pack_info": [
         {
             "device_pack_id": 1,
@@ -34,6 +35,13 @@ _version : 1_
 - 
 - Each project should have a unique gateway ID, which is used to create the MQTT topic for sending data to the server. For example, if the gateway_id is 1, the MQTT topic would be PurCity/ESP_to_server/1.
 
+### message_id
+
+- The `message_id` is a unique identifier assigned to each message sent to the server. This unique ID helps the server track and manage the messages it receives.
+- After receiving a message, the server responds with a message containing the word "act" and an ID similar to the original `message_id`. This indicates that the original message was successfully received by the server.
+- The `message_id` can be a nanosecond-precision Unix timestamp, which provides a highly unique and time-based identifier for each message.
+- It is explained in more detail in the `delivey_messge_stracture` file.
+- 
 ### device_pack_info
 - This is an array that contains information about the various device packs connected to the gateway.
 - Each element in the array represents a unique device_pack_id, which is an integer that identifies the device pack.
