@@ -5,7 +5,7 @@ _version : 1_
 ```
 {
     "gateway_id": 1,
-    "message_id": 1,
+    "message_id": 1717616744045,
     "device_pack_info": [
         {
             "device_pack_id": 1,
